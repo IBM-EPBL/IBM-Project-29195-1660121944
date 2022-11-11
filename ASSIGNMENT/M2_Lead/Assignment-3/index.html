@@ -1,0 +1,32 @@
+<html>
+ <head>
+ <title>IBM object storage-watson assistant</title>
+ <link rel="stylesheet" href="https://ibm-customer-care-registry.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+ <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "efc238b4-6f5c-4044-a29a-0e45dc0317fe", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "25b3728e-fa85-4836-aaf1-8da1af0760da", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+ <body>
+ <h3>IMAGE 1</h3>
+ <img src="https://ibm-customer-care-registry.s3.jp-tok.cloud-object-storage.appdomain.cloud/100.jpg" width="300" height="200"><br><br>
+ <h3>IMAGE 2</h3>
+ <img src="https://ibm-customer-care-registry.s3.jp-tok.cloud-object-storage.appdomain.cloud/200.jpg" width="300" height="200"><br><br>
+ <h3>IMAGE 3<h3>
+ <img src="https://ibm-customer-care-registry.s3.jp-tok.cloud-object-storage.appdomain.cloud/300.jpg" width="300" height="200"><br><br>
+ <h3>IMAGE 4</h3>
+ <img src="https://ibm-customer-care-registry.s3.jp-tok.cloud-object-storage.appdomain.cloud/400.jpg" width="300" height="200"><br><br>
+ <h3>IMAGE 5</h3>
+ <img src="https://ibm-customer-care-registry.s3.jp-tok.cloud-object-storage.appdomain.cloud/500.jpg" width="300" height="200"><br><br>
+
+ </body>
+ </head>
+</html>
