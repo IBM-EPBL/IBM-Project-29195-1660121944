@@ -5,9 +5,9 @@
 
 ## TEAM MEMBERS 🧑‍🤝‍🧑
 > TEAM LEAD - AKILESWARAN G <br>
-> M1_LEAD   - AJITH P <br>
-> M2_LEAD   - DURAI MURUGAN R <br>
-> M3_LEAD   - JAYENDRA M <br>
+> Member_1   - AJITH P <br>
+> Member_2   - DURAI MURUGAN R <br>
+> Member_3   - JAYENDRA M <br>
 
 <hr>
 
@@ -21,19 +21,19 @@
 
 # ASSIGNMENT INFORMATIONS 📃📃
 
-## ASSIGNMENT 01 🎯
+## ASSIGNMENT 01 
 
 > Develop a sample homepage with html, CSS which should include banner, image & description about yourself
 and contact form.
 
-## ASSIGNMENT 02 🎯
+## ASSIGNMENT 02 
 
 > 1. Create a Flask App <br>
 > 2. Add the Home page, About Page <br>
 > 3. Add the Bootstrap <br>
 > 4. Add the Sign in page and App the Signup Page + database connectivity <br>
 
-## ASSIGNMENT 03 🎯
+## ASSIGNMENT 03 
 
 > 1.Create a Bucket in IBM object storage. <br>
 > 2.Upload an 5 images  to ibm object storage and make it public. write html code to displaying all the 5 images. <br>
@@ -41,7 +41,7 @@ and contact form.
 > 4.Design a chatbot using IBM Watson assistant for hospital. Ex: User comes with query to know the branches for that hospital in your city. Submit the web URL of that chat bot as a assignment. <br>
 > 5.Create Watson assistant service with 10 steps and use 3 conditions in it. Load that script in HTML page. <br>
 
-## ASSIGNMENT 04 🎯
+## ASSIGNMENT 04 
 
 > 1.Pull an Image from docker hub and run it in docker playground. <br>
 > 2.Create a dockerfile for the job portal / flask application and deploy it in Docker desktop application.  <br>
