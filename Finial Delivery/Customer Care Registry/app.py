@@ -198,7 +198,7 @@ def loginagent():
             loginagent = id
             password = request.form['password']
 
-            sql = f"select * from AGENT where id='{escape(id)}' and password='{escape(password)}'"
+            sql = "select * from AGENT where id='{escape(id)}' and password='{escape(password)}'"
             stmt = ibm_db.exec_immediate(conn, sql)
             data = ibm_db.fetch_both(stmt)
             
@@ -212,7 +212,7 @@ def loginagent():
         except:
             flash("Error in Insertion operation", "danger")
 
-    return render_template("signinpageagent.html")
+    return render_template("signuppage.html")
 
 @app.route('/delete/<ID>')
 def delete(ID):
@@ -249,7 +249,7 @@ def register():
             if account:
                 flash("Record Aldready found", "success")
             else:
-                insert_sql = "insert into customer(name,email,password,phonenumber,DATE)values(?,?,?,?,?)"
+                insert_sql = "insert into customer(name,email,password,phonenumber)values(?,?,?,?)"
                 prep_stmt = ibm_db.prepare(conn, insert_sql)
                 ibm_db.bind_param(prep_stmt, 1, name)
                 ibm_db.bind_param(prep_stmt, 2, email)
@@ -272,9 +272,9 @@ def register():
                 subject = "Registering Account"
                 html_content = " <html><body><h1>Thanks for Registering into Customer Care Registry</h1> <h2>Your Account Id is :"+str(hi[0])+"</h2><h2>Please kindly login with this Id</h2> <h2>With Regards:</h2><h3>Customer Care Registry</h3> </body></html>"
                 sender = {"name": "IBM CUSTOMER CARE REGISTRY",
-                  "email": "ibmdemo6@yahoo.com"}
+                  "email": "ajithkumar6382pmp@gmail.com"}
                 to = [{"email": email, "name": name}]
-                reply_to = {"email": "ibmdemo6@yahoo.com", "name": "IBM"}
+                reply_to = {"email": "ajithkumar6382pmp@gmail.com", "name": "IBM"}
                 headers = {"Some-Custom-Name": "unique-id-1234"}
                 params = {"parameter": "My param value",
                   "subject": "Email Verification"}
@@ -283,12 +283,12 @@ def register():
 
                 api_response = api_instance.send_transac_email(send_smtp_email)
 
-                pprint(api_response)
+                print(api_response)
 
         except:
             flash("Error in Insertion Operation", "danger")
         finally:
-            return redirect(url_for("signuppage"))
+            return redirect(url_for("loginagent"))
             con.close()
 
     return render_template('signuppage.html')

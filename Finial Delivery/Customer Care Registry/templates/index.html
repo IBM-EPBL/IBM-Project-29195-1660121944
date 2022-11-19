@@ -7,7 +7,7 @@
 	
 	<section class="site-hero" style="background-color: lightblue;" id="section-home">
 
-		<div class="container p-3 mb-2 bg-primary rounded mx-auto " style="height:1000px; width:800px;">
+		<div class="container p-3 mb-2 rounded mx-auto " style="height:1000px; width:800px;background-color:rgb(200,200,200)">
 
 			<div class="row text-center" style="padding-top:200px;">
 				<h1 class="section-heading text-center">
@@ -30,7 +30,7 @@
 	<!-- section -->
 	<section class="site-section" id="section-sign">
 
-		<div class="container" style="width: 200 px; height:500px">
+		<div class="container" style="width: 200 px; height:500px;background-color:#89CFF0;">
 			
 				<h2 style="color:black;" class="text-center">{{mes}}</h2>
 			
@@ -45,11 +45,11 @@
 			</div>
 
 			<div class="row text-center mx-auto mb-3 ">
-				<a href="{{ url_for('signinpage') }}" class="btn btn-primary btn-block " role="button"><span
+				<a href="{{ url_for('loginagent') }}" class="btn btn-primary btn-block " role="button"><span
 						style="color:black; font-weight: bolder; height: 100px;">Sign in</span> </a>
 			</div>
 			<div class="row text-center mx-auto mb-5 ">
-				<a href="{{ url_for('signuppage') }}" class="btn btn-primary btn-block" role="button"><span
+				<a href="{{ url_for('loginagent') }}" class="btn btn-primary btn-block" role="button"><span
 						style="color:black; font-weight: bolder; height: 100px;">Sign up</span></a>
 			</div>
 
@@ -60,7 +60,7 @@
 			</div>
 
 			<div class="row text-center mx-auto mb-3 ">
-				<a href="{{ url_for('agentsignin') }}" class="btn btn-primary btn-block " role="button"><span
+				<a href="{{ url_for('home') }}" class="btn btn-primary btn-block " role="button"><span
 						style="color:black; font-weight: bolder;">Sign in</span> </a>
 			</div>
 
@@ -383,7 +383,7 @@
 				</div>
 
 				<div class="col-md-7 mb-5 mb-md-0">
-					<form action="{{ url_for('getintouch') }}" class="site-form" method="post">
+					<form action="{{ url_for('home') }}" class="site-form" method="post">
 						<h3 class="mb-5">Get In Touch</h3>
 						<div class="form-group">
 							<input name="name" type="text" class="form-control px-3 py-4" id = "name" name= "name" placeholder="Your Name">
